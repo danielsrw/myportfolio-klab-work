@@ -487,6 +487,7 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    padding: 60px;
 }
 
 .app__profiles {
@@ -539,6 +540,7 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    padding: 60px;
 }
 
 .app__work-filter {
@@ -548,7 +550,7 @@
     align-items: center;
     padding-left: 30%;
     flex-wrap: wrap;
-    margin: 4rem 0 2rem;
+    margin: 2.5rem 0 2rem;
 }
 
 .app__work-filter .app__work-filter-item {
@@ -710,6 +712,7 @@
     flex: 1;
     width: 100%;
     flex-direction: column;
+    padding: 40px 100px;
 }
 
 .app__skills-container {
@@ -877,3 +880,325 @@ p {
     }
 }
 
+/*Testimony*/
+
+.app__testimonial {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.app__testimonial div {
+    padding-top: 40px;
+}
+
+.app__testimonial-item {
+    width: 60%;
+    min-height: 320px;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin-left: 20%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.app__testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__testimonial {
+        min-height: 450px;
+    }
+
+    .app__testimonial img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app__testimonial-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app__testimonial-item {
+        flex-direction: column;
+    }
+}
+
+.app__testimonial-content {
+    flex: 1;
+    height: 100%;
+    padding: 0 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.app__testimonial-content p {
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--black-color);
+    font-family: var(--font-base);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__testimonial-content p {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+}
+
+.app__testimonial-content h4 {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 2rem;
+}
+
+.app__testimonial-content h5 {
+    font-weight: 400;
+    color: var(--black-color);
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .app__testimonial-content {
+        margin-top: 2rem;
+        padding: 0;
+    }
+}
+
+.app__testimonial-btns {
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.app__testimonial-btns div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.app__testimonial-btns div i {
+    width: 20px;
+    height: 20px;
+    color: var(--black-color);
+}
+
+.app__testimonial-btns div:hover {
+    background-color: var(--secondary-color);
+}
+
+.app__testimonial-btns div i:hover {
+    color: var(--black-color);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__testimonial-btns div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .app__testimonial-btns div i {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.app__testimonial-brands {
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.app__testimonial-brands div {
+    width: 150px;
+    margin: 0.7rem;
+}
+
+.app__testimonial-brands div img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.app__testimonial-brands div img:hover {
+    filter: grayscale(0);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__testimonial-brands div {
+        width: 210px;
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__testimonial-brands div {
+        width: 120px;
+        margin: 1rem;
+    }
+}
+
+/*Footer*/
+
+.app__footer {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .app__footer {
+        flex-direction: column;
+    }
+}
+
+.app__footer-cards {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4em 2rem 2rem;
+    margin-left: 20%;
+}
+
+.app__footer-cards .app__footer-card {
+    min-width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #fef4f5;
+    transition: all 0.3s ease-in-out;
+}
+
+.app__footer-cards .app__footer-card img {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.7rem;
+}
+
+.app__footer-cards .app__footer-card p {
+    font-weight: 500;
+}
+
+.app__footer-cards .app__footer-card a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.app__footer-cards .app__footer-card:hover {
+    box-shadow: 0 0 25px #fef4f5;
+}
+
+@media screen and (max-width: 450px) {
+    .app__footer-cards .app__footer-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app__footer-cards {
+        width: 100%;
+    }
+}
+
+.app__footer-cards .app__footer-card:last-child {
+    background-color: #f2f7fb;
+}
+
+.app__footer-cards .app__footer-card:last-child:hover {
+    box-shadow: 0 0 25px #f2f7fb;
+}
+
+.app__footer-form {
+    width: 60%;
+    flex-direction: column;
+    margin: 1rem 20%;
+}
+
+.app__footer-form div {
+    width: 100%;
+    margin: 0.75rem 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.app__footer-form div input {
+    width: 100%;
+    padding: 0.95rem;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    font-family: var(--font-base);
+    color: var(--black-color);
+    outline: none;
+}
+
+.app__footer-form div textarea {
+    width: 100%;
+    padding: 0.95rem;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    font-family: var(--font-base);
+    color: var(--black-color);
+    outline: none;
+    height: 170px;
+}
+
+.app__footer-form div:hover {
+    box-shadow: 0 0 25px var(--primary-color);
+}
+
+.app__footer-form button {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+    font-weight: 500;
+    color: var(--black-color);
+    outline: none;
+    margin: 2rem 0 0 0;
+    font-family: var(--font-base);
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    cursor: pointer;
+}
+
+.app__footer-form button:hover {
+    background-color: var(--black-color);
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .app__footer-form {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}

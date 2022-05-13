@@ -42,6 +42,24 @@
 
         <!-- Header -->
         <div class="app__header app__flex" id="home">
+        	<div class="app__social">
+		        <a href="https://twitter.com/anonymousxviiii">
+		            <div>
+		                <i class="fa-solid twitter"></i>
+		            </div>
+		        </a>
+		        <a href="https://instagram.com/daniels_xvii">
+		            <div>
+		                <i class="fa-solid instagram"></i>
+		            </div>
+		        </a>
+		        <a href="">
+		            <div>
+		                <i class="fa-solid whatsapp"></i>
+		            </div>
+		        </a>
+		    </div>
+
 	        <div class="app__header-info">
 	            <div class="app__header-badge">
 	                <div class="badge-cmp app__flex">
@@ -92,6 +110,14 @@
                     <img src='assets/img/node.png' alt="profile_bg" />
                 </div>
 	        </div>
+
+		    <div class="app__navigation">
+		        <a href='#home' class="app__navigation-dot" style='background: #313BAC'></a>
+		        <a href='#home' class="app__navigation-dot"></a>
+		        <a href='#home' class="app__navigation-dot"></a>
+		        <a href='#home' class="app__navigation-dot"></a>
+		        <a href='#home' class="app__navigation-dot"></a>
+		    </div>
 	    </div>
 
 	    <!-- About -->
@@ -307,8 +333,78 @@
 	    </div>
 
 	    <!-- Testimonial -->
+	    <div class="app__testimonial app__primarybg" id="testimonial">
+	    	<h2 class="head-text">Testimonials</h2>
+	    	<div>
+                <div class="app__testimonial-item app__flex">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/avatar-370-456322.png" alt='' />
+                    <div class="app__testimonial-content">
+                        <p class="p-text">
+                            There’s no need to explain our vision repeatedly. He have a clear, quick, and professional approach.
+                        </p>
+                        <div>
+                            <h4 class="bold-text">Ntwali Olivier Martial</h4>
+                            <h5 class="p-text">EAYT Ltd</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app__testimonial-btns app__flex">
+                    <div class="app__flex" onClick=''>
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+
+                    <div class="app__flex" onClick=''>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app__testimonial-brands app__flex">
+                <div>
+                    <img src='assets/img/weforem.png' alt='' />
+                </div>
+                <div>
+                    <img src='assets/img/nexcode.png' alt='' />
+                </div>
+                <div>
+                    <img src='assets/img/ndahari.png' alt='' />
+                </div>
+                <div>
+                    <img src='assets/img/eayt.png' alt='' />
+                </div>
+            </div>
+	    </div>
 
 	    <!-- Footer -->
+	    <div class="app__footer app__whitebg" id="contact">
+	    	<h2 class="head-text">Take a coffee & chat with me</h2>
+
+	    	<div class="app__footer-cards">
+                <div class="app__footer-card ">
+                    <img src='assets/img/email.png' alt="email" />
+                    <a href="mailto:danielsrwanda@gmail.com" class="p-text">danielsrwanda@gmail.com</a>
+                </div>
+                <div class="app__footer-card">
+                    <img src='assets/img/mobile.png' alt="phone" />
+                    <a href="tel:+250781862349" class="p-text">+250 781 862 349</a>
+                </div>
+            </div>
+
+            <div class="app__footer-form app__flex">
+                <div class="app__flex">
+                    <input class="p-text" type="text" placeholder="Your Name" name="username" />
+                </div>
+                <div class="app__flex">
+                    <input class="p-text" type="email" placeholder="Your Email" name="email" />
+                </div>
+                <div>
+                    <textarea class="p-text" placeholder="Your Message" name="message"> </textarea>
+                </div>
+                <button type="button" class="p-text" onClick=''>Send Message</button>
+            </div>
+	    </div>
+
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/fontawesome.min.js"></script>
